@@ -1,0 +1,55 @@
+Helloworld
+
+-----------------------------------------------------------------------------------
+manifest.json
+
+
+{
+  "manifest_version": 3,
+  "name": "Hello World Extension",
+  "version": "1.0",
+  "action": {
+    "default_popup": "popup.html"
+  }
+}
+
+popup.html
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Hello World Popup</title>
+  </head>
+  <body>
+    <h2>Hello World!</h2>
+  </body>
+</html>
+-----------------------------------------------------------------------------------
+Change  text conversion to **** 
+-----------------------------------------------------------------------------------
+{
+  "manifest_version": 3,
+  "name": "Word Replace Extension",
+  "version": "1.0",
+  "description": "Replaces 'tinkerhub' with '*' on any webpage",
+
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["content.js"]
+    }
+  ]
+}
+
+
+content.js
+
+document.body.innerHTML = document.body.innerHTML.replace(/tinkerhub/gi, "*");
+
+
+
+
+
+
+
+
