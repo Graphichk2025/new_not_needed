@@ -46,6 +46,28 @@ content.js
 
 document.body.innerHTML = document.body.innerHTML.replace(/tinkerhub/gi, "*");
 
+------------------------------------------------------------------------------
+Name	Purpose
+manifest_version	Defines the manifest version (always 3).
+name	Name of the extension.
+version	Version number of the extension.
+description	Short explanation of what the extension does.
+action	Controls popup and icon behavior.
+icons	Sets extension icons.
+✅ TABLE 2 — Advanced Keys (2 Columns)
+Name	Purpose
+permissions	Allows special Chrome features (tabs, storage, etc.).
+host_permissions	Allows accessing specific websites.
+content_scripts	Injects JavaScript/CSS into webpages.
+background	Runs background service worker script.
+options_page	Settings/options page for the extension.
+options_ui	Modern styled settings page.
+commands	Keyboard shortcuts for extension actions.
+web_accessible_resources	Makes extension files usable in webpages.
+chrome_url_overrides	Replaces Chrome’s pages (new tab, history).
+omnibox	Adds your own search keyword in Chrome address bar.
+default_locale	Supports multiple languages.
+minimum_chrome_version	Requires a specific Chrome version.
 
 
 
