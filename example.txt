@@ -71,7 +71,29 @@ minimum_chrome_version	Requires a specific Chrome version.
 
 
 
-
+document.getElementById("openBtn").addEventListener("click", () => {
+  // Open website in a new tab
+  window.open("https://lovable.dev/", "_blank");
+});
+ 
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Open Website</title>
+  </head>
+  <body>
+    <button id="openBtn">Go to Lovable.dev</button>
+    <script src="popup.js"></script>
+  </body>
+</html>
+{
+  "manifest_version": 3,
+  "name": "Open Website Button",
+  "version": "1.0",
+  "action": {
+    "default_popup": "popup.html"
+  }
+}
 
 
 
